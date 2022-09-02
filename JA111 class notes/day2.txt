@@ -1,0 +1,171 @@
+J2SE : 
+JDK s/w 
+Java 8 or above 
+
+Java developer : JDK 
+
+Java : JRE
+
+Demo.java -----
+public Demo1
+Demo2
+Demo3
+
+Demo.java
+
+class Demo{
+
+}
+
+Demo.java -----------> compiler  ------Demo.class------>JVM
+
+
+Developing Java Application in IDE (STS):
+=================================
+
+in java all classes should be inside a package.
+
+package name convension is reverse domain name
+
+com.masai.service
+100   --- business logic 
+com.masai.dao
+500 ---data base access code
+com.masai.controller
+400  --- controller flow
+
+com
+    masai
+         service
+
+
+first keyword using which we should start a java application :
+package
+
+type few charecter + crtl + spacebar 
+
+main + crtl+ spacebar
+
+
+public static void main(String[] args)
+
+
+Class and Interface : should start with capital latter . (PascalNamingConvension)
+
+
+--any thing start with capital letter it would be either class or an interface (99 % )
+ArrayList
+InputStream
+
+
+variable name, method name : should start with small letter and follow camelCasing
+
+calculateInterest()
+forName()
+
+
+variable are 2 types: 
+java does not support global variable  ----
+
+it support only  instance variable or class variable and local variable
+
+example:
+
+Demo.java:
+---------------
+
+package com.masai;
+
+public class Demo {
+	
+	//static or class variable
+	static int x=10;
+	
+	//non-static or instance variable
+	int y = 20;
+	
+	public static void main(String[] args) {
+	
+		//local variable 	
+		int z =100;
+		
+		System.out.println(x);
+		
+	
+	}	
+}
+
+
+***Note: in java, local variable must be initialized before we use it.
+
+	//local variable 	
+		int z;
+		
+		z=100;
+		
+	System.out.println(z);
+		
+example :
+
+Demo.java:
+---------------
+
+package com.masai;
+
+public class Demo {
+	
+	
+	
+	public static void main(String[] args) {
+	
+		 int marks = 500;
+		 
+//		 if(marks > 600)
+//			 System.out.println("First Div");
+//		 else
+//			 System.out.println("Second Div");
+		 
+		
+//		 String result = "First Div";
+//		 
+//		 if(marks < 600)
+//			 result="Second Div";
+//		 
+//		 System.out.println(result);
+		 
+		 
+		 
+		 String result = (marks > 600) ? "First Div" : "Second Div";
+		 
+		 System.out.println(result);
+		 
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,275 @@
+int x = 10;
+
+if x value is divisible by 5 then print "Hello"  // 10
+if x value is divisible by 3 then print "Welcome" // 9 
+if x value is divisible by 5 and 3 then print "Hello Welcome"  // 15,30
+if x value is not divisible by 5 and 3 then print "invalid number" //2,11
+
+
+Datatypes in java:
+==============
+
+--java supports 8 primitive datatypes under 4 categories:
+
+A. Integers:
+
+1.byte  8 bit/1 byte   0   -128 to 127 
+2.short 16bit / 2 byte  0
+3.int 32 bit/ 4 byte  0 
+4.long 64 bit/ 8byte  0
+
+B.Real numbers:
+
+5. float 32 bit or 4 bytes   0.0
+6.double 64 bit or 8byte  0.0
+
+C. Charecters:
+
+7.char --- 16 bit or 2 byte  ' '
+
+D. Boolean 
+
+8. boolean -- 1 bit  (true  or false) : false
+
+Note: any number with the decimal point value would be accepted by the jvm as double not as a float
+
+***local variable must be initialized before we use it.
+
+typecasting:
+=========
+
+--the procedure of converting one data type into its equivallent another data type is known as typecasting.
+--we have 2 types of typecasting:
+
+1.implicit typecasting: (widening or upcasting)
+
+--storing the smaller datatype value into its equivallent bigger datatype
+
+2.explicit typecasting: (narrowing or downcasting)
+
+--storing the bigger datatype value into its equivallent smaller datatype
+
+
+
+
+		byte b =10;
+		
+		byte c = (byte)(b+1);
+		
+
+Note: if we use arithmatic operator (+, - , * , /, % ) with two  datatypes then the resultent data type will be according to the following rule:
+
+max(int, type1, type2, ....);
+
+int=  max(int, byte, byte);
+
+
+
+byte to char conversion:
+==================
+
+--byte and char both are compatible type, their value can be assignd to each other, implicitly conversion takes places.
+
+
+		char c1 = 'A';
+		char c2 = 100;
+		
+		
+		System.out.println(c2);
+		
+
+ex2:
+
+
+		char c1 = 'A';
+		
+		
+		byte c2 = (byte)c1;
+		
+		System.out.println(c2);
+		
+ex3:
+
+
+		byte b =70;
+		
+		char c = (char)b;
+		
+		
+		System.out.println(b);
+		
+*******************************************************************************************
+
+1) For compute-launch-button-tooltip Error:
+https://stackoverflow.com/questions/12529629/eclipse-an-internal-error-occurred-during-compute-launch-button-tooltip
+
+Try setting the launch properties in: Window>Preferences>Run/Debug(Expand)>Launching(Click)
+
+Under launch Operations menu set it to: Always launch the previously launched application Click: Apply>Ok
+
+--------------------
+
+2) For Pushing in Github directly From STS:
+
+https://www.geeksforgeeks.org/how-to-export-eclipse-projects-to-github/#:~:text=Step%25201%253A%2520Open%2520Eclipse%2520IDE,go%2520to%2520Team%252D%253Ecommit.
+
+
+If still facing issue push it manually for now.
+
+--------------------
+
+
+3) for jdk error: change version of JDK to 1.7
+
+*************************************************************************************
+
+
+Class and Object concept:
+====================
+
+Java is an Object Orineted Programming language: 
+
+OOP supports OOPs concept:
+
+oops concept having some principles:
+
+1.encapsulation   :- it is the backbone of OOPs concept.
+2.abstraction
+3.polymorphism
+4.inheritance
+
+
+Java mostly used to develop Business application:
+
+Business Organization:   without computer: manually 
+Goal : earn profit
+
+---to computerize the services offered by any business organization whatever application we develop is known as Business application.
+
+any program or application common part:
+
+1. data 
+
+variables
+
+2.logic 
+
+functions/ methods
+
+
+example:
+
+Banking application:
+-------------------------
+class Account{
+
+private String customerName 
+private int accno
+private double balance = 10000;  
+
+public deposit(int amt){
+//security 
+
+balance = balance+amt;
+
+}
+public withdraw(int amt){
+//securty logic 
+balance = balance - amt;
+}
+checkBalance()
+transferAmount()
+
+}
+
+class Authentication{
+
+changePassword()
+login()
+logout()
+
+}
+
+
+
+---untill anything(data) loaded into the RAM (primary memory) it will not be available to the CPU for the execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

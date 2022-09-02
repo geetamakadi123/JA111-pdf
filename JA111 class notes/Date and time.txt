@@ -1,0 +1,86 @@
+Date and Time api:
+================
+
+Prior to Java 1.8 we use following classes to handle data and time in java:
+
+--these classes are from 
+java.util
+java.text package
+
+
+the classes are :
+
+java.util.Date(c)
+java.util.Calander(c)
+java.text.SimpleDateFormat
+
+ 
+from java 1.8 onwards a new Date and time api introcuded in
+java.time package.
+
+
+Demo.java:
+-------------
+package com.masai;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.ZonedDateTime;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		LocalDate ld=LocalDate.now();
+		
+		System.out.println(ld);
+		
+		LocalTime lt=LocalTime.now();
+		
+		System.out.println(lt);
+		
+		LocalDateTime ldt=LocalDateTime.now();
+		System.out.println(ldt);
+		
+		ZonedDateTime zdt=ZonedDateTime.now();
+		System.out.println(zdt);
+		
+	}
+}
+
+
+
+G - Era(AD BC)
+
+y - year( yy(18) or yyyy(2018))
+
+M - Month(M(9) or MM(09) or MMM(Sep))(MMMMM--September)
+
+d - day(d(23) or dd(23) or ddd(023))
+
+E - day in a weak(E (sun))(EEEE--Sunday)
+
+a - am pm 
+
+h - hour in am or pm (1-12)
+
+hh - hour in am or pm (01-12)
+
+H - hour of day in 24 hour form (0-23)
+
+HH - hour of day in 24 hour form (00-23)
+
+m - minute (4)
+
+mm - minute (04)
+
+s - second (4)
+
+ss - second(04)
+
+
+
+
+
+

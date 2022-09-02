@@ -1,0 +1,138 @@
+Some intro
+Setup : 
+1. using installing the JDK and develop the application in Notepad and execute it on the command prompt.
+2.install any IDE (STS) 
+
+IDE (Integrated Development Environment)
+IDE intelligence
+
+shortcut keys
+System.out.println("");  sout, syso + crtl+spacebar
+generate some dynamic code.
+
+
+VScode--
+Eclipse ---universal JAVA IDE
+IntelliJ:--community edition, Ultimate edition
+STS    (Eclipse + with some built-in plugin to develop Spring boot application)
+NetBeans
+RAD
+
+
+
+setup 1: installing JDK and developing java application manually using Notepad and cmd.
+--------------------------------------------------------------------------------------------------------
+
+JDK 8 or above: 
+after downloading the JDK install the JDK as a ordinary s/w.
+
+after installation we need to set some environment to develop our first java application.
+
+
+Java has 3 categories:
+---------------------------
+
+1.J2SE (java 2 standard edition)   ---base editon/ core edtion for remaining 2 editions
+2.J2EE (Java 2 Enterprise edition)
+3.J2ME(Java 2 miro edition)
+
+--J2SE : it is a specification, from sun microsystem(it is a documentation contains some rules and guidelines to develop a s/w product)
+
+--the implementation of this J2SE specification is JDK s/w.
+
+
+
+1. Java application development:  (JDK)
+
+2. Java application running/ using /consuming : (JRE)
+
+in most of the computer JRE is inbuilt.
+
+.jar file -----> aws   JRE
+
+
+
+First.java:
+-------------
+
+class Demo {
+
+	public static void main(String[] args){
+
+		System.out.println("Welcome to Java");
+
+	}
+
+}
+
+
+>javac First.java
+
+--here compiler will generate the .class file according to the class name.
+ex:
+
+Demo.class
+
+--to execute the .class file we need to invoke the JVM: and pass the class name in which main method is there, without the extension.
+ex:-
+
+>java Demo       
+
+***Note: Inside a single .java file we can have multiple classes.
+
+example:
+
+First.java:
+-------------
+
+class Demo1 {
+
+	public static void main(String[] args){
+
+		System.out.println("Welcome to Java Demo1");
+
+	}
+
+}
+
+class Demo2 {
+
+	public static void main(String[] args){
+
+		System.out.println("Welcome to Java Demo2");
+
+	}
+
+}
+
+class Demo3 {
+
+	public static void main(String[] args){
+
+		System.out.println("Welcome to Java Demo3");
+
+	}
+
+}
+
+
+
+>javac First.java
+
+here we wil get 3 .class files (for each class one seperate .class file)
+
+Note: while running the java application we can run atmost only once class at a time.
+
+--if inside a .java file any class is public then we can not save that file with any name,
+we must save that file with public class name.otherwise we will get a compilation error.
+
+
+***Note: in a single .java file we can have atmost only one class can be public, and 
+the name of that file should be public class name.
+
+--we should keep only one class inside a single .java file. and we should save that file 
+with the class name only.
+
+
+
+
